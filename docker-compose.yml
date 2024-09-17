@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  jupyter:
+    build:
+      context: .
+    container_name: my_jupyter_container
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./raws:/app/raws
+    command: ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root", "--no-browser", "--NotebookApp.token=''"]
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  rstudio:
+    image: rocker/rstudio:latest
+    container_name: my_rstudio_container
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./raws:/home/rstudio/raws
+    environment:
+      - DISABLE_AUTH=true
+    depends_on:
+      - jupyter
