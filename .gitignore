@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+#ignore the raws folder that includes the raw data
+raws/
+
+#ignore all the DS_Store files
+**/.DS_Store
