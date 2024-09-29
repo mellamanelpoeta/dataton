@@ -4,7 +4,8 @@
 .Ruserdata
 
 #ignore the raws folder that includes the raw data
-raws/
+raws/csv
+raws/shp
 
 #ignore all the DS_Store files
 **/.DS_Store
