@@ -7,3 +7,7 @@ scikit-learn
 scipy
 statsmodels
 geopandas
+folium
+branca
+unidecode
+openpyxl
