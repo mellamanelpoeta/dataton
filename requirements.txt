@@ -9,3 +9,5 @@ statsmodels
 geopandas
 folium
 branca
+unidecode
+openpyxl
