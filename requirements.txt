@@ -7,3 +7,5 @@ scikit-learn
 scipy
 statsmodels
 geopandas
+folium
+branca
